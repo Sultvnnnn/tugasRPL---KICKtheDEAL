@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --font-jetbrains: "JetBrains Mono", monospace;
+}
+
+nav {
+    position: fixed; /* Atau gunakan sticky jika hanya ingin efek lengket saat scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Pastikan background agar navbar tidak transparan */
+    z-index: 1000; /* Pastikan lebih tinggi dari elemen lainnya */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk estetika */
+}

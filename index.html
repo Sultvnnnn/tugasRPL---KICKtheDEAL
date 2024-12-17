@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>KicktheDeal!</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <!-- Promo START-->
+    <div class="bg-red-600 px-4 py-3 text-white">
+      <p class="text-center text-sm font-black font-mono">
+        GRAND OPENING SALE - UP TO 50% OFF!
+        <a href="#" class="inline-block underline">CLAIM NOW!</a>
+      </p>
+    </div>
+    <!-- Promo END-->
+
+    <!-- Search Bar START -->
+    <!-- Search Bar END -->
+
+    <!-- NAVBAR START -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky top-0">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="/assets/KICKtheDEAL (3).png"
+            class="h-10"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-2xl font-bold whitespace-nowrap dark:text-white"
+            >KICKtheDEAL</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 md:dark:text-red-500 active:text-red-500 hover:text-red-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:text-red-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:text-red-500"
+                >Hot Kicks</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- CTA START -->
+    <section
+      class="overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-center"
+    >
+      <!-- Kolom Kiri: Tulisan -->
+      <div class="p-4 md:p-12 lg:px-16 lg:py-24">
+        <div class="text-left">
+          <div class="flex items-center space-x-4">
+            <img
+              src="/assets/KICKtheDEAL.png"
+              alt="Logo 1"
+              class="h-[150px] w-[150px] object-contain"
+            />
+            <h1 class="font-extrabold text-5xl">KICK the DEAL!</h1>
+          </div>
+
+          <p class="text-gray-700 mt-4">
+            <span class="font-bold">KICK It Right, Grab the Best DEAL!</span>
+            <br />
+            <br />
+            The Ultimate Platform to Grab Your Dream Sneakers at a "Steal Deal"!
+            <br />
+            We’re here for sneakerheads who are looking for high-quality kicks
+            at unbeatable prices. At KicktheDeal, every step starts with a deal
+            that won’t break the bank!
+          </p>
+
+          <div class="mt-6">
+            <a
+              href="#"
+              class="inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-black focus:outline-none focus:ring focus:ring-red-600"
+            >
+              Grab Your Kicks Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Gambar -->
+      <div class="flex justify-center items-center">
+        <img
+          src="https://cdn.easyfrontend.com/pictures/hero/hero-11.png"
+          alt="CTA Image"
+          class="rounded w-auto max-w-[300px] sm:max-w-[400px] object-contain"
+        />
+      </div>
+    </section>
+    <!-- CTA END -->
+
+    <!-- PRODUCT START -->
+    <h1 class="text-center font-extrabold text-3xl mt-10">
+      Check out our hot kicks!
+    </h1>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mr-8 ml-8 mt-16"
+    >
+      <!-- Card 1 -->
+      <a href="#" class="group block overflow-hidden">
+        <div class="relative h-[150px] sm:h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        <div class="relative bg-white pt-3">
+          <h3
+            class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+          >
+            Limited Edition Sports Trainer
+          </h3>
+          <div class="mt-1.5 flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">$189.99</p>
+            <p class="text-xs uppercase tracking-wide">6 Colors</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="#" class="group block overflow-hidden">
+        <div class="relative h-[150px] sm:h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        <div class="relative bg-white pt-3">
+          <h3
+            class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+          >
+            Limited Edition Sports Trainer
+          </h3>
+          <div class="mt-1.5 flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">$189.99</p>
+            <p class="text-xs uppercase tracking-wide">6 Colors</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="#" class="group block overflow-hidden">
+        <div class="relative h-[150px] sm:h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        <div class="relative bg-white pt-3">
+          <h3
+            class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+          >
+            Limited Edition Sports Trainer
+          </h3>
+          <div class="mt-1.5 flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">$189.99</p>
+            <p class="text-xs uppercase tracking-wide">6 Colors</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="#" class="group block overflow-hidden">
+        <div class="relative h-[150px] sm:h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        <div class="relative bg-white pt-3">
+          <h3
+            class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+          >
+            Limited Edition Sports Trainer
+          </h3>
+          <div class="mt-1.5 flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">$189.99</p>
+            <p class="text-xs uppercase tracking-wide">6 Colors</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="#" class="group block overflow-hidden">
+        <div class="relative h-[150px] sm:h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        <div class="relative bg-white pt-3">
+          <h3
+            class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+          >
+            Limited Edition Sports Trainer
+          </h3>
+          <div class="mt-1.5 flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">$189.99</p>
+            <p class="text-xs uppercase tracking-wide">6 Colors</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 6 -->
+      <a href="#" class="group block overflow-hidden">
+        <div class="relative h-[150px] sm:h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        <div class="relative bg-white pt-3">
+          <h3
+            class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+          >
+            Limited Edition Sports Trainer
+          </h3>
+          <div class="mt-1.5 flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">$189.99</p>
+            <p class="text-xs uppercase tracking-wide">6 Colors</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- PRODUCT END -->
+
+    <!-- FAQS START -->
+    <h1 class="text-center font-extrabold text-3xl mt-20">FAQs</h1>
+    <div class="space-y-4 mr-20 ml-20">
+      <details
+        class="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+        open
+      >
+        <summary
+          class="flex cursor-pointer items-center justify-between gap-1.5"
+        >
+          <h2 class="text-lg font-bold text-gray-900">About KICKtheDEAL</h2>
+
+          <span
+            class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <p class="mt-4 leading-relaxed text-gray-700">
+          ✨ Why Choose KicktheDeal? Authentic sneakers at a cut-off price. The
+          best deals for true sneaker enthusiasts. A complete collection, from
+          streetwear staples to high-end kicks. <br />💥 Lace Up and KicktheDeal
+          Now! Don’t miss out on our awesome collections. Join the community
+          that knows style doesn’t have to cost a fortune! <br /><br />📢 Find
+          your next steal deal sneaker today!
+        </p>
+      </details>
+
+      <!-- ORDERING AND PURCHASING -->
+      <details
+        class="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+      >
+        <summary
+          class="flex cursor-pointer items-center justify-between gap-1.5"
+        >
+          <h2 class="text-lg font-bold text-gray-900">Ordering & Purchasing</h2>
+
+          <span
+            class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Q: How do I place an order? <br />A: Simply select your desired
+          product, choose the size, add it to the cart, and proceed to checkout.
+          <br /><br />Q: Are all items in stock? <br />A: Our inventory is
+          updated regularly. If an item is sold out, you can wait for a restock
+          or check out new arrivals.
+        </p>
+      </details>
+      <!-- ORDERING AND PURCHASING -->
+
+      <!-- SHIPPING -->
+      <details
+        class="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+      >
+        <summary
+          class="flex cursor-pointer items-center justify-between gap-1.5"
+        >
+          <h2 class="text-lg font-bold text-gray-900">Shipping</h2>
+
+          <span
+            class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Q: How long does delivery take? <br />A: Delivery typically takes 2-5
+          business days, depending on your location. <br /><br />Q: Do you offer
+          international shipping? <br />A: Yes, we ship to various countries
+          with additional shipping charges. <br /><br />Q: How can I track my
+          order? <br />A: You’ll receive a tracking number once your order is
+          shipped. Use this number to track your package via the courier's
+          website.
+        </p>
+      </details>
+      <!-- SHIPPING -->
+
+      <!-- Sizes & Products -->
+      <details
+        class="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+      >
+        <summary
+          class="flex cursor-pointer items-center justify-between gap-1.5"
+        >
+          <h2 class="text-lg font-bold text-gray-900">Sizes & Products</h2>
+
+          <span
+            class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Q: How do I choose the right size? <br />A: Please refer to our size
+          guide on the product page to find your perfect fit. <br /><br />Q: Are
+          the sneakers 100% authentic? <br />A: Yes, we guarantee that all our
+          products are 100% authentic and of premium quality. <br /><br />Q: Can
+          I see more details of the product? <br />A: Each product comes with
+          high-resolution images from multiple angles to showcase every detail.
+        </p>
+      </details>
+      <!-- Sizes & Products -->
+
+      <!-- Returns & Exchanges -->
+      <details
+        class="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+      >
+        <summary
+          class="flex cursor-pointer items-center justify-between gap-1.5"
+        >
+          <h2 class="text-lg font-bold text-gray-900">Returns & Exchanges</h2>
+
+          <span
+            class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Q: Can I exchange the size if it doesn’t fit? <br />A: Yes, we accept
+          size exchanges within 7 days of receiving your order, provided the
+          product is in its original condition. <br /><br />Q: How do I return
+          an item? <br />A: Please contact our customer service team for return
+          instructions.
+        </p>
+      </details>
+      <!-- Returns & Exchanges -->
+
+      <!-- Payments -->
+      <details
+        class="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+      >
+        <summary
+          class="flex cursor-pointer items-center justify-between gap-1.5"
+        >
+          <h2 class="text-lg font-bold text-gray-900">Payments</h2>
+
+          <span
+            class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Q: What payment methods do you accept? <br />A: We accept bank
+          transfers, credit/debit cards, e-wallets, and other secure payment
+          methods. <br /><br />Q: Is my payment information secure? <br />A:
+          Absolutely. We use encrypted and secure payment systems to protect
+          your privacy.
+        </p>
+      </details>
+      <!-- Payments -->
+
+      <!-- Promotions & Discounts -->
+      <details
+        class="group border-s-4 border-gray-900 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+      >
+        <summary
+          class="flex cursor-pointer items-center justify-between gap-1.5"
+        >
+          <h2 class="text-lg font-bold text-gray-900">
+            Promotions & Discounts
+          </h2>
+
+          <span
+            class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Q: How can I get discounts or promotions? <br />A: Sign up for our
+          newsletter or check our promotions page to access special offers.
+          <br /><br />Q: Do you have a loyalty program? <br />A: Yes! You can
+          earn points with every purchase that can be redeemed for discounts.
+        </p>
+      </details>
+      <!-- Promotions & Discounts -->
+    </div>
+    <!-- FAQS END -->
+
+    <!-- TESTIMONIALS START -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
+
+    <script type="module">
+      import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+
+      const keenSliderActive = document.getElementById("keen-slider-active");
+      const keenSliderCount = document.getElementById("keen-slider-count");
+
+      const keenSlider = new KeenSlider(
+        "#keen-slider",
+        {
+          loop: true,
+          defaultAnimation: {
+            duration: 750,
+          },
+          slides: {
+            origin: "center",
+            perView: 1,
+            spacing: 16,
+          },
+          breakpoints: {
+            "(min-width: 640px)": {
+              slides: {
+                origin: "center",
+                perView: 1.5,
+                spacing: 16,
+              },
+            },
+            "(min-width: 768px)": {
+              slides: {
+                origin: "center",
+                perView: 1.75,
+                spacing: 16,
+              },
+            },
+            "(min-width: 1024px)": {
+              slides: {
+                origin: "center",
+                perView: 3,
+                spacing: 16,
+              },
+            },
+          },
+          created(slider) {
+            slider.slides[slider.track.details.rel].classList.remove(
+              "opacity-40"
+            );
+
+            keenSliderActive.innerText = slider.track.details.rel + 1;
+            keenSliderCount.innerText = slider.slides.length;
+          },
+          slideChanged(slider) {
+            slider.slides.forEach((slide) => slide.classList.add("opacity-40"));
+
+            slider.slides[slider.track.details.rel].classList.remove(
+              "opacity-40"
+            );
+
+            keenSliderActive.innerText = slider.track.details.rel + 1;
+          },
+        },
+        []
+      );
+
+      const keenSliderPrevious = document.getElementById(
+        "keen-slider-previous"
+      );
+      const keenSliderNext = document.getElementById("keen-slider-next");
+
+      keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+      keenSliderNext.addEventListener("click", () => keenSlider.next());
+    </script>
+
+    <section class="bg-white mt-20">
+      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2
+          class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+        >
+          Read trusted reviews from our customers
+        </h2>
+
+        <div class="mt-8">
+          <div id="keen-slider" class="keen-slider">
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-red-600">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Paul Starr
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-red-600">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Paul Starr
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-red-600">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Paul Starr
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-red-600">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Paul Starr
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="mt-6 flex items-center justify-center gap-4">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="text-gray-600 transition-colors hover:text-gray-900"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <p class="w-16 text-center text-sm text-gray-700">
+              <span id="keen-slider-active"></span>
+              /
+              <span id="keen-slider-count"></span>
+            </p>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="text-gray-600 transition-colors hover:text-gray-900"
+            >
+              <svg
+                class="size-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS START -->
+  </body>
+
+  <footer>
+    <footer class="bg-slate-100 rounded-lg shadow-md m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="/"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img src="/assets/KICKtheDEAL.png" class="h-20" alt="KtD Logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-gray-800"
+              >KICKtheDEAL</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-600 sm:mb-0"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-300 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-gray-700 sm:text-center"
+          >© 2024 <a href="/" class="hover:underline">KICKtheDEAL™</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
+  </footer>
+</html>
